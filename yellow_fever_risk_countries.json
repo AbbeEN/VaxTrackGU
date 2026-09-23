@@ -1,0 +1,605 @@
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-09-23",
+  "count": 42,
+  "scope": "Yellow-fever origin / transit / recent-travel screening; not a complete travel-entry decision. Includes French Guiana as a separate territory.",
+  "countries": [
+    {
+      "iso2": "AO",
+      "name": "Angola",
+      "source_name": "Angola",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "AR",
+      "name": "Argentina",
+      "source_name": "Argentina",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "BJ",
+      "name": "Benin",
+      "source_name": "Benin",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "BO",
+      "name": "Bolivia",
+      "source_name": "Bolivia",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "BR",
+      "name": "Brazil",
+      "source_name": "Brazil",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "BF",
+      "name": "Burkina Faso",
+      "source_name": "Burkina Faso",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "BI",
+      "name": "Burundi",
+      "source_name": "Burundi",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "CM",
+      "name": "Cameroon",
+      "source_name": "Cameroon",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "CF",
+      "name": "Central African Republic",
+      "source_name": "Central African Republic",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "TD",
+      "name": "Chad",
+      "source_name": "Chad",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "CO",
+      "name": "Colombia",
+      "source_name": "Colombia",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "CG",
+      "name": "Congo (Brazzaville)",
+      "source_name": "Congo, Republic of the",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "CD",
+      "name": "Congo (DRC)",
+      "source_name": "Democratic Republic of the Congo",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "EC",
+      "name": "Ecuador",
+      "source_name": "Ecuador",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "GQ",
+      "name": "Equatorial Guinea",
+      "source_name": "Equatorial Guinea",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "ET",
+      "name": "Ethiopia",
+      "source_name": "Ethiopia",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "GF",
+      "name": "French Guiana",
+      "source_name": "French Guiana",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "GA",
+      "name": "Gabon",
+      "source_name": "Gabon",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "GM",
+      "name": "Gambia",
+      "source_name": "The Gambia",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "GH",
+      "name": "Ghana",
+      "source_name": "Ghana",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "GN",
+      "name": "Guinea",
+      "source_name": "Guinea",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "GW",
+      "name": "Guinea-Bissau",
+      "source_name": "Guinea-Bissau",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "GY",
+      "name": "Guyana",
+      "source_name": "Guyana",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "CI",
+      "name": "Ivory Coast",
+      "source_name": "Côte d’Ivoire",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "KE",
+      "name": "Kenya",
+      "source_name": "Kenya",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "LR",
+      "name": "Liberia",
+      "source_name": "Liberia",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "ML",
+      "name": "Mali",
+      "source_name": "Mali",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "MR",
+      "name": "Mauritania",
+      "source_name": "Mauritania",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "NE",
+      "name": "Niger",
+      "source_name": "Niger",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "NG",
+      "name": "Nigeria",
+      "source_name": "Nigeria",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "PA",
+      "name": "Panama",
+      "source_name": "Panama",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "PY",
+      "name": "Paraguay",
+      "source_name": "Paraguay",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "PE",
+      "name": "Peru",
+      "source_name": "Peru",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "SN",
+      "name": "Senegal",
+      "source_name": "Senegal",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "SL",
+      "name": "Sierra Leone",
+      "source_name": "Sierra Leone",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "SS",
+      "name": "South Sudan",
+      "source_name": "South Sudan",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "SD",
+      "name": "Sudan",
+      "source_name": "Sudan",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "SR",
+      "name": "Suriname",
+      "source_name": "Suriname",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "TG",
+      "name": "Togo",
+      "source_name": "Togo",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "TT",
+      "name": "Trinidad and Tobago",
+      "source_name": "Trinidad and Tobago",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    },
+    {
+      "iso2": "UG",
+      "name": "Uganda",
+      "source_name": "Uganda",
+      "region": "Africa",
+      "risk_in_part_of_country_cdc": false,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": false
+    },
+    {
+      "iso2": "VE",
+      "name": "Venezuela",
+      "source_name": "Venezuela",
+      "region": "Americas",
+      "risk_in_part_of_country_cdc": true,
+      "source_ids": [
+        "cdc_yf",
+        "nathnac_yf",
+        "who_yf_list"
+      ],
+      "risk_in_part_of_country_nathnac": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "who_yf_list",
+      "name": "WHO — countries with risk of yellow fever transmission",
+      "url": "https://www.who.int/publications/m/item/countries-with-risk-of-yellow-fever-transmission-and-countries-requiring-yellow-fever-vaccination-%28november-2022%29",
+      "published": "2022-11-18",
+      "role": "Underlying WHO country/area classification referenced by CDC and NaTHNaC.",
+      "retrieved_on": "2026-09-23"
+    },
+    {
+      "id": "cdc_yf",
+      "name": "CDC Yellow Book — Yellow Fever, Table 4.21.1",
+      "url": "https://www.cdc.gov/yellow-book/hcp/travel-associated-infections-diseases/yellow-fever.html",
+      "published": "2025-04-23",
+      "table_last_reviewed": "2024-09",
+      "role": "Primary extraction of the 42 country/area entries.",
+      "retrieved_on": "2026-09-23"
+    },
+    {
+      "id": "nathnac_yf",
+      "name": "NaTHNaC Yellow Fever Zone — Countries with risk of yellow fever transmission",
+      "url": "https://nathnacyfzone.org.uk/factsheet/65/countries-with-risk-of-yellow-fever-transmission",
+      "published": null,
+      "role": "Independent list comparison and country-specific exception guidance.",
+      "retrieved_on": "2026-09-23"
+    },
+    {
+      "id": "ecdc_yf",
+      "name": "ECDC — Facts about yellow fever",
+      "url": "https://www.ecdc.europa.eu/en/yellow-fever/facts",
+      "published": "2021-05-31",
+      "role": "Certificate validity context only; not the source of the 42-country list.",
+      "retrieved_on": "2026-09-23"
+    }
+  ],
+  "limitations": [
+    "A match only means that a destination-specific yellow-fever certificate rule may apply.",
+    "A non-match does not establish absence of a certificate requirement: some destinations require all arrivals or specify extra origins.",
+    "Check transit duration, recent travel, arrival age, exemptions and destination exceptions separately.",
+    "Do not use this list to suppress polio or other origin-dependent health rules.",
+    "Subnational risk flags describe exposure geography, not automatic border-rule exemptions.",
+    "CDC and NaTHNaC differ on whether Paraguay has partial-country risk; both source flags are preserved."
+  ],
+  "certificate_context": {
+    "primary_vaccination_certificate_valid_after_days": 10,
+    "validity": "lifetime",
+    "source_ids": [
+      "cdc_yf",
+      "ecdc_yf"
+    ]
+  }
+}

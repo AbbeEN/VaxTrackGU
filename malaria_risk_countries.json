@@ -1,0 +1,704 @@
+{
+  "source_url": "https://ourworldindata.org/grapher/incidence-of-malaria.csv",
+  "indicator": "New cases of malaria per 1,000 people at risk",
+  "unit": "per 1,000 population at risk",
+  "source": "World Health Organization (Global Health Observatory), via World Bank (2026), processed by Our World in Data",
+  "countries": [
+    {
+      "code": "AFG",
+      "name": "Afghanistan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 17.76
+    },
+    {
+      "code": "DZA",
+      "name": "Algeria",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "AGO",
+      "name": "Angola",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 258.9
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "ARM",
+      "name": "Armenia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "AZE",
+      "name": "Azerbaijan",
+      "year": 2023,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.86
+    },
+    {
+      "code": "BLZ",
+      "name": "Belize",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "BEN",
+      "name": "Benin",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 354.25
+    },
+    {
+      "code": "BTN",
+      "name": "Bhutan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "BOL",
+      "name": "Bolivia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 3.83
+    },
+    {
+      "code": "BWA",
+      "name": "Botswana",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.2
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 3.75
+    },
+    {
+      "code": "BFA",
+      "name": "Burkina Faso",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 353.49
+    },
+    {
+      "code": "BDI",
+      "name": "Burundi",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 314.9
+    },
+    {
+      "code": "KHM",
+      "name": "Cambodia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.03
+    },
+    {
+      "code": "CMR",
+      "name": "Cameroon",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 260.46
+    },
+    {
+      "code": "CPV",
+      "name": "Cape Verde",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.14
+    },
+    {
+      "code": "CAF",
+      "name": "Central African Republic",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 343.84
+    },
+    {
+      "code": "TCD",
+      "name": "Chad",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 206.14
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 15.19
+    },
+    {
+      "code": "COM",
+      "name": "Comoros",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 62.79
+    },
+    {
+      "code": "COG",
+      "name": "Congo",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 221.02
+    },
+    {
+      "code": "CRI",
+      "name": "Costa Rica",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.13
+    },
+    {
+      "code": "CIV",
+      "name": "Cote d'Ivoire",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 267.95
+    },
+    {
+      "code": "COD",
+      "name": "Democratic Republic of Congo",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 321.89
+    },
+    {
+      "code": "DJI",
+      "name": "Djibouti",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 45.09
+    },
+    {
+      "code": "DOM",
+      "name": "Dominican Republic",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.19
+    },
+    {
+      "code": "WB_EAP",
+      "name": "East Asia and Pacific (WB)",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 2.8121488
+    },
+    {
+      "code": "TLS",
+      "name": "East Timor",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "ECU",
+      "name": "Ecuador",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.04
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "SLV",
+      "name": "El Salvador",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "GNQ",
+      "name": "Equatorial Guinea",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 227.73
+    },
+    {
+      "code": "ERI",
+      "name": "Eritrea",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 102.42
+    },
+    {
+      "code": "SWZ",
+      "name": "Eswatini",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.55
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 138.5
+    },
+    {
+      "code": "GAB",
+      "name": "Gabon",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 187.0
+    },
+    {
+      "code": "GMB",
+      "name": "Gambia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 75.44
+    },
+    {
+      "code": "GEO",
+      "name": "Georgia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "GHA",
+      "name": "Ghana",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 195.77
+    },
+    {
+      "code": "GTM",
+      "name": "Guatemala",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.21
+    },
+    {
+      "code": "GIN",
+      "name": "Guinea",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 286.08
+    },
+    {
+      "code": "GNB",
+      "name": "Guinea-Bissau",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 110.13
+    },
+    {
+      "code": "GUY",
+      "name": "Guyana",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 38.74
+    },
+    {
+      "code": "HTI",
+      "name": "Haiti",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 8.7
+    },
+    {
+      "code": "HND",
+      "name": "Honduras",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.23
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 1.48
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 2.23
+    },
+    {
+      "code": "IRN",
+      "name": "Iran",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 2.18
+    },
+    {
+      "code": "IRQ",
+      "name": "Iraq",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "KAZ",
+      "name": "Kazakhstan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "KEN",
+      "name": "Kenya",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 74.17
+    },
+    {
+      "code": "KGZ",
+      "name": "Kyrgyzstan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "LAO",
+      "name": "Laos",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.13
+    },
+    {
+      "code": "WB_LAC",
+      "name": "Latin America and Caribbean (WB)",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 4.2647777
+    },
+    {
+      "code": "LBR",
+      "name": "Liberia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 172.34
+    },
+    {
+      "code": "OWID_LIC",
+      "name": "Low-income countries",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 206.6892
+    },
+    {
+      "code": "OWID_LMC",
+      "name": "Lower-middle-income countries",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 56.589935
+    },
+    {
+      "code": "MDG",
+      "name": "Madagascar",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 255.45
+    },
+    {
+      "code": "MWI",
+      "name": "Malawi",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 294.53
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "MLI",
+      "name": "Mali",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 346.22
+    },
+    {
+      "code": "MRT",
+      "name": "Mauritania",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 69.55
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.1
+    },
+    {
+      "code": "WB_MENAP",
+      "name": "Middle East, North Africa, Afghanistan and Pakistan (WB)",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 9.970843
+    },
+    {
+      "code": "MAR",
+      "name": "Morocco",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "MOZ",
+      "name": "Mozambique",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 295.1
+    },
+    {
+      "code": "MMR",
+      "name": "Myanmar",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 14.78
+    },
+    {
+      "code": "NAM",
+      "name": "Namibia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 7.2
+    },
+    {
+      "code": "NPL",
+      "name": "Nepal",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "NIC",
+      "name": "Nicaragua",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 1.04
+    },
+    {
+      "code": "NER",
+      "name": "Niger",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 305.14
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 294.25
+    },
+    {
+      "code": "PRK",
+      "name": "North Korea",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.51
+    },
+    {
+      "code": "OMN",
+      "name": "Oman",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 12.77
+    },
+    {
+      "code": "PAN",
+      "name": "Panama",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 3.5
+    },
+    {
+      "code": "PNG",
+      "name": "Papua New Guinea",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 151.76
+    },
+    {
+      "code": "PRY",
+      "name": "Paraguay",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "PER",
+      "name": "Peru",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 3.25
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.35
+    },
+    {
+      "code": "RWA",
+      "name": "Rwanda",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 77.14
+    },
+    {
+      "code": "STP",
+      "name": "Sao Tome and Principe",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 30.09
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "SEN",
+      "name": "Senegal",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 36.78
+    },
+    {
+      "code": "SLE",
+      "name": "Sierra Leone",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 282.67
+    },
+    {
+      "code": "SLB",
+      "name": "Solomon Islands",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 224.28
+    },
+    {
+      "code": "SOM",
+      "name": "Somalia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 53.28
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.11
+    },
+    {
+      "code": "WB_SA",
+      "name": "South Asia (WB)",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 1.456189
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.18
+    },
+    {
+      "code": "SSD",
+      "name": "South Sudan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 254.08
+    },
+    {
+      "code": "LKA",
+      "name": "Sri Lanka",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "WB_SSA",
+      "name": "Sub-Saharan Africa (WB)",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 229.26143
+    },
+    {
+      "code": "SDN",
+      "name": "Sudan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 98.25
+    },
+    {
+      "code": "SUR",
+      "name": "Suriname",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "SYR",
+      "name": "Syria",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "TJK",
+      "name": "Tajikistan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "TZA",
+      "name": "Tanzania",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 136.73
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.58
+    },
+    {
+      "code": "TGO",
+      "name": "Togo",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 249.25
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "year": 2020,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "TKM",
+      "name": "Turkmenistan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "UGA",
+      "name": "Uganda",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 264.23
+    },
+    {
+      "code": "ARE",
+      "name": "United Arab Emirates",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "OWID_UMC",
+      "name": "Upper-middle-income countries",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 1.6485283
+    },
+    {
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "VUT",
+      "name": "Vanuatu",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 12.25
+    },
+    {
+      "code": "VEN",
+      "name": "Venezuela",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 7.79
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 0.0
+    },
+    {
+      "code": "OWID_WRL",
+      "name": "World",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 64.041084
+    },
+    {
+      "code": "YEM",
+      "name": "Yemen",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 52.17
+    },
+    {
+      "code": "ZMB",
+      "name": "Zambia",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 252.41
+    },
+    {
+      "code": "ZWE",
+      "name": "Zimbabwe",
+      "year": 2024,
+      "incidence_per_1000_at_risk": 11.36
+    }
+  ]
+}

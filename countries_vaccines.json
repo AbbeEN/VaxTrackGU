@@ -1,0 +1,2716 @@
+[
+  {
+    "code": "AFG",
+    "name": "Afghanistan",
+    "who_url": "https://www.who.int/countries/afg/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "ALB",
+    "name": "Albania",
+    "who_url": "https://www.who.int/countries/alb/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "DZA",
+    "name": "Algeria",
+    "who_url": "https://www.who.int/countries/dza/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "AND",
+    "name": "Andorra",
+    "who_url": "https://www.who.int/countries/and/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "AGO",
+    "name": "Angola",
+    "who_url": "https://www.who.int/countries/ago/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "ATG",
+    "name": "Antigua and Barbuda",
+    "who_url": "https://www.who.int/countries/atg/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ARG",
+    "name": "Argentina",
+    "who_url": "https://www.who.int/countries/arg/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "ARM",
+    "name": "Armenia",
+    "who_url": "https://www.who.int/countries/arm/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "AUS",
+    "name": "Australia",
+    "who_url": "https://www.who.int/countries/aus/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "AUT",
+    "name": "Austria",
+    "who_url": "https://www.who.int/countries/aut/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "AZE",
+    "name": "Azerbaijan",
+    "who_url": "https://www.who.int/countries/aze/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BHS",
+    "name": "Bahamas",
+    "who_url": "https://www.who.int/countries/bhs/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BHR",
+    "name": "Bahrain",
+    "who_url": "https://www.who.int/countries/bhr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BGD",
+    "name": "Bangladesh",
+    "who_url": "https://www.who.int/countries/bgd/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BRB",
+    "name": "Barbados",
+    "who_url": "https://www.who.int/countries/brb/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BLR",
+    "name": "Belarus",
+    "who_url": "https://www.who.int/countries/blr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BEL",
+    "name": "Belgium",
+    "who_url": "https://www.who.int/countries/bel/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BLZ",
+    "name": "Belize",
+    "who_url": "https://www.who.int/countries/blz/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BEN",
+    "name": "Benin",
+    "who_url": "https://www.who.int/countries/ben/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "BTN",
+    "name": "Bhutan",
+    "who_url": "https://www.who.int/countries/btn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BOL",
+    "name": "Bolivia",
+    "who_url": "https://www.who.int/countries/bol/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "who_url": "https://www.who.int/countries/bih/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BWA",
+    "name": "Botswana",
+    "who_url": "https://www.who.int/countries/bwa/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BRA",
+    "name": "Brazil",
+    "who_url": "https://www.who.int/countries/bra/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "BRN",
+    "name": "Brunei",
+    "who_url": "https://www.who.int/countries/brn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BGR",
+    "name": "Bulgaria",
+    "who_url": "https://www.who.int/countries/bgr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "BFA",
+    "name": "Burkina Faso",
+    "who_url": "https://www.who.int/countries/bfa/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "BDI",
+    "name": "Burundi",
+    "who_url": "https://www.who.int/countries/bdi/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "CPV",
+    "name": "Cabo Verde",
+    "who_url": "https://www.who.int/countries/cpv/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "KHM",
+    "name": "Cambodia",
+    "who_url": "https://www.who.int/countries/khm/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CMR",
+    "name": "Cameroon",
+    "who_url": "https://www.who.int/countries/cmr/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "CAN",
+    "name": "Canada",
+    "who_url": "https://www.who.int/countries/can/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CAF",
+    "name": "Central African Republic",
+    "who_url": "https://www.who.int/countries/caf/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "TCD",
+    "name": "Chad",
+    "who_url": "https://www.who.int/countries/tcd/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "CHL",
+    "name": "Chile",
+    "who_url": "https://www.who.int/countries/chl/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CHN",
+    "name": "China",
+    "who_url": "https://www.who.int/countries/chn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "COL",
+    "name": "Colombia",
+    "who_url": "https://www.who.int/countries/col/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "COM",
+    "name": "Comoros",
+    "who_url": "https://www.who.int/countries/com/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "COG",
+    "name": "Congo",
+    "who_url": "https://www.who.int/countries/cog/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "COD",
+    "name": "Congo (DRC)",
+    "who_url": "https://www.who.int/countries/cod/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "CRI",
+    "name": "Costa Rica",
+    "who_url": "https://www.who.int/countries/cri/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CIV",
+    "name": "Côte d'Ivoire",
+    "who_url": "https://www.who.int/countries/civ/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "HRV",
+    "name": "Croatia",
+    "who_url": "https://www.who.int/countries/hrv/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CUB",
+    "name": "Cuba",
+    "who_url": "https://www.who.int/countries/cub/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CYP",
+    "name": "Cyprus",
+    "who_url": "https://www.who.int/countries/cyp/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CZE",
+    "name": "Czech Republic",
+    "who_url": "https://www.who.int/countries/cze/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "DNK",
+    "name": "Denmark",
+    "who_url": "https://www.who.int/countries/dnk/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "DJI",
+    "name": "Djibouti",
+    "who_url": "https://www.who.int/countries/dji/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "DMA",
+    "name": "Dominica",
+    "who_url": "https://www.who.int/countries/dma/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "DOM",
+    "name": "Dominican Republic",
+    "who_url": "https://www.who.int/countries/dom/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ECU",
+    "name": "Ecuador",
+    "who_url": "https://www.who.int/countries/ecu/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "EGY",
+    "name": "Egypt",
+    "who_url": "https://www.who.int/countries/egy/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SLV",
+    "name": "El Salvador",
+    "who_url": "https://www.who.int/countries/slv/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "GNQ",
+    "name": "Equatorial Guinea",
+    "who_url": "https://www.who.int/countries/gnq/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "ERI",
+    "name": "Eritrea",
+    "who_url": "https://www.who.int/countries/eri/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "EST",
+    "name": "Estonia",
+    "who_url": "https://www.who.int/countries/est/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SWZ",
+    "name": "Eswatini",
+    "who_url": "https://www.who.int/countries/swz/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ETH",
+    "name": "Ethiopia",
+    "who_url": "https://www.who.int/countries/eth/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "FJI",
+    "name": "Fiji",
+    "who_url": "https://www.who.int/countries/fji/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "FIN",
+    "name": "Finland",
+    "who_url": "https://www.who.int/countries/fin/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "FRA",
+    "name": "France",
+    "who_url": "https://www.who.int/countries/fra/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "GAB",
+    "name": "Gabon",
+    "who_url": "https://www.who.int/countries/gab/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "GMB",
+    "name": "Gambia",
+    "who_url": "https://www.who.int/countries/gmb/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "GEO",
+    "name": "Georgia",
+    "who_url": "https://www.who.int/countries/geo/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "DEU",
+    "name": "Germany",
+    "who_url": "https://www.who.int/countries/deu/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "GHA",
+    "name": "Ghana",
+    "who_url": "https://www.who.int/countries/gha/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "GRC",
+    "name": "Greece",
+    "who_url": "https://www.who.int/countries/grc/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "GRD",
+    "name": "Grenada",
+    "who_url": "https://www.who.int/countries/grd/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "GTM",
+    "name": "Guatemala",
+    "who_url": "https://www.who.int/countries/gtm/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "GIN",
+    "name": "Guinea",
+    "who_url": "https://www.who.int/countries/gin/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "GNB",
+    "name": "Guinea-Bissau",
+    "who_url": "https://www.who.int/countries/gnb/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "GUY",
+    "name": "Guyana",
+    "who_url": "https://www.who.int/countries/guy/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "HTI",
+    "name": "Haiti",
+    "who_url": "https://www.who.int/countries/hti/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "HND",
+    "name": "Honduras",
+    "who_url": "https://www.who.int/countries/hnd/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "HUN",
+    "name": "Hungary",
+    "who_url": "https://www.who.int/countries/hun/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ISL",
+    "name": "Iceland",
+    "who_url": "https://www.who.int/countries/isl/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "IND",
+    "name": "India",
+    "who_url": "https://www.who.int/countries/ind/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "IDN",
+    "name": "Indonesia",
+    "who_url": "https://www.who.int/countries/idn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "IRN",
+    "name": "Iran",
+    "who_url": "https://www.who.int/countries/irn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "IRQ",
+    "name": "Iraq",
+    "who_url": "https://www.who.int/countries/irq/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "IRL",
+    "name": "Ireland",
+    "who_url": "https://www.who.int/countries/irl/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ISR",
+    "name": "Israel",
+    "who_url": "https://www.who.int/countries/isr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ITA",
+    "name": "Italy",
+    "who_url": "https://www.who.int/countries/ita/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "JAM",
+    "name": "Jamaica",
+    "who_url": "https://www.who.int/countries/jam/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "JPN",
+    "name": "Japan",
+    "who_url": "https://www.who.int/countries/jpn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "JOR",
+    "name": "Jordan",
+    "who_url": "https://www.who.int/countries/jor/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "KAZ",
+    "name": "Kazakhstan",
+    "who_url": "https://www.who.int/countries/kaz/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "KEN",
+    "name": "Kenya",
+    "who_url": "https://www.who.int/countries/ken/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "KIR",
+    "name": "Kiribati",
+    "who_url": "https://www.who.int/countries/kir/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "PRK",
+    "name": "North Korea",
+    "who_url": "https://www.who.int/countries/prk/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "KOR",
+    "name": "South Korea",
+    "who_url": "https://www.who.int/countries/kor/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "KWT",
+    "name": "Kuwait",
+    "who_url": "https://www.who.int/countries/kwt/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "KGZ",
+    "name": "Kyrgyzstan",
+    "who_url": "https://www.who.int/countries/kgz/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LAO",
+    "name": "Laos",
+    "who_url": "https://www.who.int/countries/lao/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LVA",
+    "name": "Latvia",
+    "who_url": "https://www.who.int/countries/lva/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LBN",
+    "name": "Lebanon",
+    "who_url": "https://www.who.int/countries/lbn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LSO",
+    "name": "Lesotho",
+    "who_url": "https://www.who.int/countries/lso/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LBR",
+    "name": "Liberia",
+    "who_url": "https://www.who.int/countries/lbr/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "LBY",
+    "name": "Libya",
+    "who_url": "https://www.who.int/countries/lby/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LIE",
+    "name": "Liechtenstein",
+    "who_url": "https://www.who.int/countries/lie/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LTU",
+    "name": "Lithuania",
+    "who_url": "https://www.who.int/countries/ltu/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LUX",
+    "name": "Luxembourg",
+    "who_url": "https://www.who.int/countries/lux/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MDG",
+    "name": "Madagascar",
+    "who_url": "https://www.who.int/countries/mdg/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MWI",
+    "name": "Malawi",
+    "who_url": "https://www.who.int/countries/mwi/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MYS",
+    "name": "Malaysia",
+    "who_url": "https://www.who.int/countries/mys/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MDV",
+    "name": "Maldives",
+    "who_url": "https://www.who.int/countries/mdv/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MLI",
+    "name": "Mali",
+    "who_url": "https://www.who.int/countries/mli/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "MLT",
+    "name": "Malta",
+    "who_url": "https://www.who.int/countries/mlt/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MHL",
+    "name": "Marshall Islands",
+    "who_url": "https://www.who.int/countries/mhl/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MRT",
+    "name": "Mauritania",
+    "who_url": "https://www.who.int/countries/mrt/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "MUS",
+    "name": "Mauritius",
+    "who_url": "https://www.who.int/countries/mus/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MEX",
+    "name": "Mexico",
+    "who_url": "https://www.who.int/countries/mex/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "FSM",
+    "name": "Micronesia",
+    "who_url": "https://www.who.int/countries/fsm/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MDA",
+    "name": "Moldova",
+    "who_url": "https://www.who.int/countries/mda/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MCO",
+    "name": "Monaco",
+    "who_url": "https://www.who.int/countries/mco/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MNG",
+    "name": "Mongolia",
+    "who_url": "https://www.who.int/countries/mng/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MNE",
+    "name": "Montenegro",
+    "who_url": "https://www.who.int/countries/mne/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MAR",
+    "name": "Morocco",
+    "who_url": "https://www.who.int/countries/mar/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MOZ",
+    "name": "Mozambique",
+    "who_url": "https://www.who.int/countries/moz/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "MMR",
+    "name": "Myanmar",
+    "who_url": "https://www.who.int/countries/mmr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NAM",
+    "name": "Namibia",
+    "who_url": "https://www.who.int/countries/nam/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NRU",
+    "name": "Nauru",
+    "who_url": "https://www.who.int/countries/nru/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NPL",
+    "name": "Nepal",
+    "who_url": "https://www.who.int/countries/npl/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NLD",
+    "name": "Netherlands",
+    "who_url": "https://www.who.int/countries/nld/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NZL",
+    "name": "New Zealand",
+    "who_url": "https://www.who.int/countries/nzl/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NIC",
+    "name": "Nicaragua",
+    "who_url": "https://www.who.int/countries/nic/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NER",
+    "name": "Niger",
+    "who_url": "https://www.who.int/countries/ner/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "NGA",
+    "name": "Nigeria",
+    "who_url": "https://www.who.int/countries/nga/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "MKD",
+    "name": "North Macedonia",
+    "who_url": "https://www.who.int/countries/mkd/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "NOR",
+    "name": "Norway",
+    "who_url": "https://www.who.int/countries/nor/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "OMN",
+    "name": "Oman",
+    "who_url": "https://www.who.int/countries/omn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "PAK",
+    "name": "Pakistan",
+    "who_url": "https://www.who.int/countries/pak/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "PLW",
+    "name": "Palau",
+    "who_url": "https://www.who.int/countries/plw/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "PAN",
+    "name": "Panama",
+    "who_url": "https://www.who.int/countries/pan/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "PNG",
+    "name": "Papua New Guinea",
+    "who_url": "https://www.who.int/countries/png/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "PRY",
+    "name": "Paraguay",
+    "who_url": "https://www.who.int/countries/pry/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "PER",
+    "name": "Peru",
+    "who_url": "https://www.who.int/countries/per/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "PHL",
+    "name": "Philippines",
+    "who_url": "https://www.who.int/countries/phl/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "POL",
+    "name": "Poland",
+    "who_url": "https://www.who.int/countries/pol/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "PRT",
+    "name": "Portugal",
+    "who_url": "https://www.who.int/countries/prt/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "QAT",
+    "name": "Qatar",
+    "who_url": "https://www.who.int/countries/qat/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ROU",
+    "name": "Romania",
+    "who_url": "https://www.who.int/countries/rou/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "RUS",
+    "name": "Russia",
+    "who_url": "https://www.who.int/countries/rus/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "RWA",
+    "name": "Rwanda",
+    "who_url": "https://www.who.int/countries/rwa/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "who_url": "https://www.who.int/countries/kna/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LCA",
+    "name": "Saint Lucia",
+    "who_url": "https://www.who.int/countries/lca/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "who_url": "https://www.who.int/countries/vct/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "WSM",
+    "name": "Samoa",
+    "who_url": "https://www.who.int/countries/wsm/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SMR",
+    "name": "San Marino",
+    "who_url": "https://www.who.int/countries/smr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "STP",
+    "name": "Sao Tome and Principe",
+    "who_url": "https://www.who.int/countries/stp/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SAU",
+    "name": "Saudi Arabia",
+    "who_url": "https://www.who.int/countries/sau/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SEN",
+    "name": "Senegal",
+    "who_url": "https://www.who.int/countries/sen/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "SRB",
+    "name": "Serbia",
+    "who_url": "https://www.who.int/countries/srb/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SYC",
+    "name": "Seychelles",
+    "who_url": "https://www.who.int/countries/syc/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SLE",
+    "name": "Sierra Leone",
+    "who_url": "https://www.who.int/countries/sle/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "SGP",
+    "name": "Singapore",
+    "who_url": "https://www.who.int/countries/sgp/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SVK",
+    "name": "Slovakia",
+    "who_url": "https://www.who.int/countries/svk/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SVN",
+    "name": "Slovenia",
+    "who_url": "https://www.who.int/countries/svn/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SLB",
+    "name": "Solomon Islands",
+    "who_url": "https://www.who.int/countries/slb/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SOM",
+    "name": "Somalia",
+    "who_url": "https://www.who.int/countries/som/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ZAF",
+    "name": "South Africa",
+    "who_url": "https://www.who.int/countries/zaf/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SSD",
+    "name": "South Sudan",
+    "who_url": "https://www.who.int/countries/ssd/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "ESP",
+    "name": "Spain",
+    "who_url": "https://www.who.int/countries/esp/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "LKA",
+    "name": "Sri Lanka",
+    "who_url": "https://www.who.int/countries/lka/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SDN",
+    "name": "Sudan",
+    "who_url": "https://www.who.int/countries/sdn/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "SUR",
+    "name": "Suriname",
+    "who_url": "https://www.who.int/countries/sur/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "SWE",
+    "name": "Sweden",
+    "who_url": "https://www.who.int/countries/swe/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "CHE",
+    "name": "Switzerland",
+    "who_url": "https://www.who.int/countries/che/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "SYR",
+    "name": "Syria",
+    "who_url": "https://www.who.int/countries/syr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TJK",
+    "name": "Tajikistan",
+    "who_url": "https://www.who.int/countries/tjk/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TZA",
+    "name": "Tanzania",
+    "who_url": "https://www.who.int/countries/tza/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "THA",
+    "name": "Thailand",
+    "who_url": "https://www.who.int/countries/tha/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TLS",
+    "name": "Timor-Leste",
+    "who_url": "https://www.who.int/countries/tls/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TGO",
+    "name": "Togo",
+    "who_url": "https://www.who.int/countries/tgo/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "TON",
+    "name": "Tonga",
+    "who_url": "https://www.who.int/countries/ton/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TTO",
+    "name": "Trinidad and Tobago",
+    "who_url": "https://www.who.int/countries/tto/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TUN",
+    "name": "Tunisia",
+    "who_url": "https://www.who.int/countries/tun/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TUR",
+    "name": "Turkey",
+    "who_url": "https://www.who.int/countries/tur/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TKM",
+    "name": "Turkmenistan",
+    "who_url": "https://www.who.int/countries/tkm/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "TUV",
+    "name": "Tuvalu",
+    "who_url": "https://www.who.int/countries/tuv/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "UGA",
+    "name": "Uganda",
+    "who_url": "https://www.who.int/countries/uga/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "UKR",
+    "name": "Ukraine",
+    "who_url": "https://www.who.int/countries/ukr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ARE",
+    "name": "United Arab Emirates",
+    "who_url": "https://www.who.int/countries/are/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "GBR",
+    "name": "United Kingdom",
+    "who_url": "https://www.who.int/countries/gbr/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "USA",
+    "name": "United States",
+    "who_url": "https://www.who.int/countries/usa/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "URY",
+    "name": "Uruguay",
+    "who_url": "https://www.who.int/countries/ury/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "UZB",
+    "name": "Uzbekistan",
+    "who_url": "https://www.who.int/countries/uzb/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "VUT",
+    "name": "Vanuatu",
+    "who_url": "https://www.who.int/countries/vut/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "VEN",
+    "name": "Venezuela",
+    "who_url": "https://www.who.int/countries/ven/",
+    "isYellowFeverEndemic": true,
+    "requiresYellowFeverCertFromEndemicZone": true,
+    "requiredVaccines": [
+      "Yellow Fever Certificate (if coming from or transiting endemic zone)"
+    ],
+    "recommendedVaccines": [
+      "Yellow Fever Vaccine",
+      "Hepatitis A",
+      "Tetanus Booster",
+      "Hepatitis B",
+      "Typhoid"
+    ],
+    "malariaRisk": "High risk present in tropical rural regions. Anti-malarial prophylaxis advised."
+  },
+  {
+    "code": "VNM",
+    "name": "Vietnam",
+    "who_url": "https://www.who.int/countries/vnm/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "YEM",
+    "name": "Yemen",
+    "who_url": "https://www.who.int/countries/yem/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ZMB",
+    "name": "Zambia",
+    "who_url": "https://www.who.int/countries/zmb/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  },
+  {
+    "code": "ZWE",
+    "name": "Zimbabwe",
+    "who_url": "https://www.who.int/countries/zwe/",
+    "isYellowFeverEndemic": false,
+    "requiresYellowFeverCertFromEndemicZone": false,
+    "requiredVaccines": [],
+    "recommendedVaccines": [
+      "Hepatitis A",
+      "Tetanus Booster"
+    ],
+    "malariaRisk": "Low or no malaria transmission in most urban regions."
+  }
+]

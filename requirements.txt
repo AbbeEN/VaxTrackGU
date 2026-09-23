@@ -1,0 +1,3 @@
+streamlit>=1.32
+certifi>=2024.0
+plotly>=7.1
