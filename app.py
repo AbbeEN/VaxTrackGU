@@ -212,6 +212,9 @@ st.markdown(
 			position: relative;
 			z-index: 2;
 		}
+		[data-testid="stAppViewContainer"] .block-container {
+			padding-top: 0 !important;
+		}
 		[data-testid="stAppViewContainer"],
 		[data-testid="stAppViewContainer"] > .main {
 			overflow: visible !important;
@@ -228,7 +231,7 @@ st.markdown(
 )
 st.markdown(
 	f"""
-	<div style="background:#ffd928; padding:1rem 1.5rem; position:relative; left:50%; transform:translateX(-50%); width:100vw; box-sizing:border-box; z-index:10000; display:flex; align-items:center; gap:1.25rem; border-bottom:1px solid #d6b500;">
+	<div style="background:#ffd928; padding:1rem 1.5rem; margin-top:35px; position:relative; left:50%; transform:translateX(-50%); width:100vw; box-sizing:border-box; z-index:10000; display:flex; align-items:center; gap:1.25rem; border-bottom:1px solid #d6b500;">
 		{icon_markup}
 		<div style="color:#14213d; max-width:900px;">
 			<div style="font-size:0.9rem; font-weight:600; text-transform:uppercase;">Travel health planner</div>
