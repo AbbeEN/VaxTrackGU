@@ -1,15 +1,20 @@
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 import ast
 import base64
 import json
+import os
 import ssl
+import tomllib
 from pathlib import Path
+from urllib.parse import quote
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 import certifi
 
 import streamlit as st
 import plotly.graph_objects as go
+from timezonefinder import TimezoneFinder
 
 
 def find_data_file(filename):
@@ -60,6 +65,86 @@ def load_country_centroids():
 		return {}
 	with centroid_path.open(encoding="utf-8") as data_file:
 		return json.load(data_file)
+
+
+@st.cache_data(ttl=86400)
+def load_country_information(country_code):
+	api_key = os.getenv("REST_COUNTRIES_API_KEY")
+	if not api_key:
+		try:
+			api_key = st.secrets.get("REST_COUNTRIES_API_KEY")
+		except (FileNotFoundError, KeyError):
+			api_key = None
+	if not api_key:
+		secrets_path = Path(__file__).parent / ".streamlit" / "secrets.toml"
+		if secrets_path.exists():
+			with secrets_path.open("rb") as secrets_file:
+				api_key = tomllib.load(secrets_file).get("REST_COUNTRIES_API_KEY")
+	if not api_key:
+		return None
+	url = f"https://api.restcountries.com/countries/v5/codes.alpha_3/{country_code}"
+	request = Request(url, headers={"User-Agent": "VaxTrack/1.0", "Authorization": f"Bearer {api_key}"})
+	context = ssl.create_default_context(cafile=certifi.where())
+	with urlopen(request, timeout=10, context=context) as response:
+		payload = json.load(response)
+	objects = payload.get("data", {}).get("objects", [])
+	return objects[0] if objects else None
+
+
+def format_country_information(country_info):
+	if not country_info:
+		return None
+	currencies = country_info.get("currencies", {})
+	if isinstance(currencies, list):
+		currency_text = ", ".join(f"{item.get('name', 'Unknown')} ({item.get('code', 'N/A')})" for item in currencies)
+	else:
+		currency_text = ", ".join(f"{details.get('name', code)} ({code})" for code, details in currencies.items())
+	languages = ", ".join(
+		item.get("name", "Unknown") for item in country_info.get("languages", [])
+	)
+	calling_codes = country_info.get("calling_codes", [])
+	calling = ", ".join(f"+{code.lstrip('+')}" for code in calling_codes) if isinstance(calling_codes, list) else calling_codes.get("root", "")
+	area = country_info.get("area", {})
+	area_value = area.get("kilometers") if isinstance(area, dict) else area
+	capital_coordinates = country_info.get("capitals", [{}])[0].get("coordinates", {}) if country_info.get("capitals") else {}
+	capital_timezone_name = TimezoneFinder().timezone_at(lng=capital_coordinates.get("lng", 0), lat=capital_coordinates.get("lat", 0)) if capital_coordinates else None
+	capital_timezone = None
+	if capital_timezone_name:
+		capital_offset = datetime.now().astimezone(ZoneInfo(capital_timezone_name)).utcoffset()
+		if capital_offset is not None:
+			total_minutes = int(capital_offset.total_seconds() // 60)
+			sign = "+" if total_minutes >= 0 else "-"
+			absolute_minutes = abs(total_minutes)
+			capital_timezone = f"UTC{sign}{absolute_minutes // 60:02d}:{absolute_minutes % 60:02d}"
+	return {
+		"flag": country_info.get("flag", {}).get("url_svg") or country_info.get("flag", {}).get("url_png"),
+		"capital": ", ".join(capital.get("name", "") for capital in country_info.get("capitals", [])),
+		"currency": currency_text or "Not listed",
+		"languages": languages or "Not listed",
+		"calling": calling or "Not listed",
+		"timezones": capital_timezone or (", ".join(country_info.get("timezones", [])) or "Not listed"),
+		"population": f"{country_info.get('population', 0):,}",
+		"area": f"{area_value:,.0f} km²" if area_value is not None else "Not listed",
+	}
+
+
+def get_currency_codes(country_info):
+	if not country_info:
+		return []
+	currencies = country_info.get("currencies", [])
+	if isinstance(currencies, list):
+		return [item.get("code") for item in currencies if item.get("code")]
+	return list(currencies)
+
+
+@st.cache_data(ttl=1800)
+def load_exchange_rate(base_currency, target_currency):
+	if base_currency == target_currency:
+		return 1.0
+	url = f"https://open.er-api.com/v6/latest/{quote(base_currency)}"
+	context = ssl.create_default_context(cafile=certifi.where())
+	with urlopen(url, timeout=10, context=context) as response:
+		return float(json.load(response)["rates"][target_currency])
 
 
 @st.cache_data(ttl=1800)
@@ -123,7 +208,7 @@ st.markdown(
 			overflow-x: hidden !important;
 		}
 		[data-testid="stAppViewContainer"] > .main {
-			padding-top: 1rem;
+			padding-top: 0;
 			position: relative;
 			z-index: 2;
 		}
@@ -148,7 +233,7 @@ st.markdown(
 		<div style="color:#14213d; max-width:900px;">
 			<div style="font-size:0.9rem; font-weight:600; text-transform:uppercase;">Travel health planner</div>
 			<div style="font-size:2rem; font-weight:800; line-height:1.15; margin:0.2rem 0 0.45rem;">Plan with confidence</div>
-			<div style="font-size:1rem; line-height:1.5;">Tell us where you are travelling from and where you are going. VaxTrack gathers the entry vaccination requirements, recommended vaccines and current health advisories for that route in one place.</div>
+			<div style="font-size:1rem; line-height:1.5;">Buzzz through your travel health checklist: entry requirements, recommended vaccines, and live health alerts for your exact route! We track what you need, so all you have to do is get it done! ;)</div>
 		</div>
 	</div>
 	""",
@@ -180,15 +265,42 @@ with input_column:
 with dashboard_column:
 	st.header("Trip summary")
 	days_until_departure = (departure_date - date.today()).days
-	summary_columns = st.columns(3)
-	summary_columns[0].metric("Route", f"{departure_country} → {destination_country}")
-	summary_columns[1].metric("Travelers", traveler_count)
-	summary_columns[2].metric("Days until departure", days_until_departure)
+	selected_country = next((country for country in COUNTRY_CATALOG if country["name"] == destination_country), None)
+	summary_columns = st.columns([1, 1.5])
+	with summary_columns[0]:
+		st.metric("Route", f"{departure_country} → {destination_country}")
+		st.metric("Travelers", traveler_count)
+		st.metric("Days until departure", days_until_departure)
+	with summary_columns[1]:
+		st.markdown(f"**{destination_country} information**")
+		origin_country = next((country for country in COUNTRY_CATALOG if country["name"] == departure_country), None)
+		origin_info = load_country_information(origin_country["code"]) if origin_country else None
+		try:
+			country_info = format_country_information(load_country_information(selected_country["code"])) if selected_country else None
+			if country_info:
+				if country_info["flag"]:
+					st.image(country_info["flag"], width=120)
+					info_columns = st.columns(2)
+					info_columns[0].write(f"**Capital**\n{country_info['capital'] or 'Not listed'}\n\n**Currency**\n{country_info['currency']}\n\n**Languages**\n{country_info['languages']}\n\n**Calling code**\n{country_info['calling']}")
+					info_columns[1].write(f"**Time zones**\n{country_info['timezones']}\n\n**Population**\n{country_info['population']}\n\n**Area**\n{country_info['area']}")
+			else:
+				st.caption("Add REST_COUNTRIES_API_KEY to load destination details.")
+		except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+			st.caption("Destination information is temporarily unavailable.")
+		base_currency = get_currency_codes(origin_info)[0] if origin_info and get_currency_codes(origin_info) else None
+		target_currency = get_currency_codes(load_country_information(selected_country["code"]))[0] if selected_country and get_currency_codes(load_country_information(selected_country["code"])) else None
+		if base_currency and target_currency:
+			st.markdown("**Currency converter**")
+			amount = st.number_input(f"Amount in {base_currency}", min_value=0.0, value=100.0, step=10.0, key="currency_amount")
+			try:
+				rate = load_exchange_rate(base_currency, target_currency)
+				st.metric(f"Value in {target_currency}", f"{amount * rate:,.2f}", delta=f"1 {base_currency} = {rate:,.4f} {target_currency}")
+			except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+				st.caption("Live exchange rate temporarily unavailable.")
 	if days_until_departure <= 14:
 		st.info("Preparation reminder: this demo trip is within 14 days. Treat this as an interface trigger, not a medical deadline.")
 
 	st.header("Latest WHO outbreak information")
-	selected_country = next((country for country in COUNTRY_CATALOG if country["name"] == destination_country), None)
 	try:
 		who_news = load_who_outbreak_news()
 		matching_news = [item for item in who_news if item.get("level_code", "").lower() == "donsindicators" and selected_country and item.get("value3", "").upper() == selected_country["code"]]
@@ -209,7 +321,6 @@ with dashboard_column:
 		if route_data is None:
 			st.info("This destination is not covered by the vaccine dataset. Missing data does not mean there are no requirements or recommendations.")
 		else:
-			st.caption("Requirements and recommendations are loaded from the local vaccine dataset.")
 			for section_name, data_key, empty_text in [("Entry vaccination requirements", "requiredVaccines", "No entry requirements are listed in the dataset."), ("Recommended vaccinations", "recommendedVaccines", "No recommendations are listed in the dataset.")]:
 				st.subheader(section_name)
 				items = route_data[data_key]
@@ -227,7 +338,6 @@ with dashboard_column:
 
 		if any(age <= 18 for age in traveler_ages):
 			st.subheader("Child traveler information")
-			st.caption("Age-banded reference information from the local children vaccine dataset. This is educational information, not medical advice.")
 			for traveler_number, age in enumerate(traveler_ages, start=1):
 				if age > 18:
 					continue
@@ -251,7 +361,7 @@ with dashboard_column:
 st.header("Health risk map")
 map_view = st.radio("Map view", ["Yellow fever", "Malaria"], horizontal=True)
 if map_view == "Yellow fever":
-	map_caption = "Countries highlighted in yellow are listed in the local yellow-fever risk dataset."
+	map_caption = ""
 	map_rows = [{
 		"iso3": country["code"],
 		"country": country["name"],
@@ -268,7 +378,8 @@ else:
 		"detail": f"{MALARIA_DATA[country['code']]['incidence_per_1000_at_risk']:.1f} cases per 1,000 people at risk ({MALARIA_DATA[country['code']]['year']})" if country["code"] in MALARIA_DATA else "No OWID malaria value",
 	} for country in COUNTRY_CATALOG]
 	colorscale = "Reds"
-st.caption(f"{map_caption} This is a screening reference, not a complete medical or travel-entry assessment.")
+if map_caption:
+	st.caption(map_caption)
 map_figure = go.Figure(go.Choropleth(
 	locations=[row["iso3"] for row in map_rows],
 	locationmode="ISO-3",
@@ -285,9 +396,13 @@ map_figure = go.Figure(go.Choropleth(
 ))
 origin = next((country for country in COUNTRY_CATALOG if country["name"] == departure_country), None)
 destination = next((country for country in COUNTRY_CATALOG if country["name"] == destination_country), None)
+map_center_longitude = 0
+map_center_latitude = 20
 if origin and destination and origin["code"] in COUNTRY_CENTROIDS and destination["code"] in COUNTRY_CENTROIDS:
 	origin_point = COUNTRY_CENTROIDS[origin["code"]]
 	destination_point = COUNTRY_CENTROIDS[destination["code"]]
+	map_center_longitude = (origin_point["longitude"] + destination_point["longitude"]) / 2
+	map_center_latitude = (origin_point["latitude"] + destination_point["latitude"]) / 2
 	map_figure.add_trace(go.Scattergeo(
 		lon=[origin_point["longitude"], destination_point["longitude"]],
 		lat=[origin_point["latitude"], destination_point["latitude"]],
@@ -298,7 +413,7 @@ if origin and destination and origin["code"] in COUNTRY_CENTROIDS and destinatio
 		hovertemplate="%{text}<extra></extra>",
 		name="Trip route",
 	))
-map_figure.update_geos(showframe=False, showcoastlines=True, coastlinecolor="#aab4c0", projection_type="natural earth")
+map_figure.update_geos(showframe=False, showcoastlines=True, coastlinecolor="#aab4c0", projection_type="natural earth", center={"lon": map_center_longitude, "lat": map_center_latitude})
 map_figure.update_layout(height=480, margin={"r": 0, "t": 0, "l": 0, "b": 0}, paper_bgcolor="rgba(0,0,0,0)")
 st.plotly_chart(map_figure, use_container_width=True, config={"displayModeBar": False})
 
@@ -307,7 +422,6 @@ emergency_data = EMERGENCY_NUMBERS.get(destination_country)
 if emergency_data is None:
 	st.info("Emergency numbers are not covered for this destination in the dataset.")
 else:
-	st.caption(f"Dataset status: {emergency_data['status']}. Numbers are for {emergency_data['name']} and may not provide nationwide coverage.")
 	emergency_columns = st.columns(3)
 	for contact_index, contact in enumerate(emergency_data["contacts"]):
 		services = []
@@ -324,5 +438,5 @@ else:
 	st.caption(f"Source: [{emergency_data['source']['name']}]({emergency_data['source']['url']})")
 
 st.header("Sources")
-st.write("Use these resources to verify current information. The supplied WHO document is from 2022 and does not replace current official guidance or medical advice.")
+st.caption("*Please note: VaxTrack is an informational tool, not a substitute for professional medical advice. Always check with your local healthcare provider or travel clinic to confirm what is right for you.*")
 st.markdown("- [WHO travel advice](https://www.who.int/health-topics/travel-and-health)\n- [CDC Travelers' Health](https://wwwnc.cdc.gov/travel)")
