@@ -255,6 +255,16 @@ st.markdown(
 		[data-testid="stRadio"] {
 			margin-bottom: -0.75rem !important;
 		}
+		[data-testid="stSlider"] [data-baseweb="slider"] [role="slider"] {
+			background-color: #ffd928 !important;
+			border-color: #b79500 !important;
+		}
+		[data-testid="stSlider"] [data-baseweb="slider"] > div:first-child {
+			background-color: #f1e5a3 !important;
+		}
+		[data-testid="stSlider"] [data-baseweb="slider"] > div:first-child > div {
+			background-color: #ffd928 !important;
+		}
 		[data-testid="stPlotlyChart"] > div,
 		[data-testid="stPlotlyChart"] iframe {
 			position: relative !important;
@@ -317,7 +327,9 @@ with input_column:
 					service_label = f"Other ({contact['dialing_notes']})"
 				services.append(service_label)
 			with emergency_columns[contact_index % 3]:
-				st.metric(", ".join(services), contact["number"])
+				service_description = ", ".join(services)
+				service_help = service_description if len(service_description) > 24 else None
+				st.metric(service_description, contact["number"], help=service_help)
 		if emergency_data["services_not_documented"]:
 			missing_services = ", ".join(service.title() for service in emergency_data["services_not_documented"])
 			st.caption(f"Services not documented in the dataset: {missing_services}.")
