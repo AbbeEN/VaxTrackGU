@@ -161,6 +161,21 @@ def load_who_outbreak_news():
 	return payload.get("Data", [])
 
 
+def render_who_outbreak_information(destination_country, selected_country):
+	st.header("Latest WHO outbreak information")
+	try:
+		who_news = load_who_outbreak_news()
+		matching_news = [item for item in who_news if item.get("level_code", "").lower() == "donsindicators" and selected_country and item.get("value3", "").upper() == selected_country["code"]]
+		if matching_news:
+			latest_news = max(matching_news, key=lambda item: item.get("value4", ""))
+			st.info(f"**{latest_news.get('value1', 'Disease outbreak news')}** — {latest_news.get('value4', 'Date unavailable')}\n\nWHO reports the latest listed Disease Outbreak News item for **{destination_country}**. [Read the WHO report]({latest_news.get('value5', 'https://extranet.who.int/publicemergency/#')})")
+		else:
+			st.info(f"No destination-specific Disease Outbreak News item is currently listed by WHO for {destination_country}.")
+		st.caption("WHO Health Emergency Dashboard data refreshes approximately every 30 minutes and is not a comprehensive list of all health events.")
+	except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+		st.warning("WHO outbreak information is temporarily unavailable. View the [WHO Health Emergency Dashboard](https://extranet.who.int/publicemergency/#) directly.")
+
+
 def load_children_vaccine_data():
 	children_path = find_data_file("travel_vaccines_children.py")
 	if children_path is None:
@@ -222,6 +237,21 @@ st.markdown(
 		[data-testid="stAppViewContainer"] {
 			overflow-x: hidden !important;
 		}
+		[data-testid="stPlotlyChart"] {
+			position: relative !important;
+			z-index: 3 !important;
+			overflow: visible !important;
+			margin-top: -1.5rem !important;
+		}
+		[data-testid="stRadio"] {
+			margin-bottom: -0.75rem !important;
+		}
+		[data-testid="stPlotlyChart"] > div,
+		[data-testid="stPlotlyChart"] iframe {
+			position: relative !important;
+			z-index: 4 !important;
+			overflow: visible !important;
+		}
 		section[data-testid="stSidebar"] {
 			display: none !important;
 		}
@@ -264,6 +294,25 @@ with input_column:
 		)
 	if st.button("Show my travel health overview", type="primary", use_container_width=True):
 		st.session_state.overview_shown = True
+	st.header("Emergency numbers")
+	emergency_data = EMERGENCY_NUMBERS.get(destination_country)
+	if emergency_data is None:
+		st.info("Emergency numbers are not covered for this destination in the dataset.")
+	else:
+		emergency_columns = st.columns(3)
+		for contact_index, contact in enumerate(emergency_data["contacts"]):
+			services = []
+			for service in contact["services"]:
+				service_label = service.title()
+				if service == "other":
+					service_label = f"Other ({contact['dialing_notes']})"
+				services.append(service_label)
+			with emergency_columns[contact_index % 3]:
+				st.metric(", ".join(services), contact["number"])
+		if emergency_data["services_not_documented"]:
+			missing_services = ", ".join(service.title() for service in emergency_data["services_not_documented"])
+			st.caption(f"Services not documented in the dataset: {missing_services}.")
+		st.caption(f"Source: [{emergency_data['source']['name']}]({emergency_data['source']['url']})")
 
 with dashboard_column:
 	st.header("Trip summary")
@@ -285,7 +334,7 @@ with dashboard_column:
 					st.image(country_info["flag"], width=120)
 					info_columns = st.columns(2)
 					info_columns[0].write(f"**Capital**\n{country_info['capital'] or 'Not listed'}\n\n**Currency**\n{country_info['currency']}\n\n**Languages**\n{country_info['languages']}\n\n**Calling code**\n{country_info['calling']}")
-					info_columns[1].write(f"**Time zones**\n{country_info['timezones']}\n\n**Population**\n{country_info['population']}\n\n**Area**\n{country_info['area']}")
+					info_columns[1].write(f"**Time zone**\n{country_info['timezones']}\n\n**Population**\n{country_info['population']}\n\n**Area**\n{country_info['area']}")
 			else:
 				st.caption("Add REST_COUNTRIES_API_KEY to load destination details.")
 		except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
@@ -293,32 +342,21 @@ with dashboard_column:
 		base_currency = get_currency_codes(origin_info)[0] if origin_info and get_currency_codes(origin_info) else None
 		target_currency = get_currency_codes(load_country_information(selected_country["code"]))[0] if selected_country and get_currency_codes(load_country_information(selected_country["code"])) else None
 		if base_currency and target_currency:
-			st.markdown("**Currency converter**")
-			amount = st.number_input(f"Amount in {base_currency}", min_value=0.0, value=100.0, step=10.0, key="currency_amount")
-			try:
-				rate = load_exchange_rate(base_currency, target_currency)
-				st.metric(f"Value in {target_currency}", f"{amount * rate:,.2f}", delta=f"1 {base_currency} = {rate:,.4f} {target_currency}")
-			except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
-				st.caption("Live exchange rate temporarily unavailable.")
+			converter_columns = st.columns([1, 1.3])
+			with converter_columns[0]:
+				amount = st.number_input(f"{base_currency} amount", min_value=0.0, value=100.0, step=10.0, key="currency_amount")
+			with converter_columns[1]:
+				try:
+					rate = load_exchange_rate(base_currency, target_currency)
+					st.metric(f"{target_currency} value", f"{amount * rate:,.2f}")
+				except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+					st.caption("Live exchange rate unavailable.")
 	if days_until_departure <= 14:
-		st.info("Preparation reminder: this demo trip is within 14 days. Treat this as an interface trigger, not a medical deadline.")
-
-	st.header("Latest WHO outbreak information")
-	try:
-		who_news = load_who_outbreak_news()
-		matching_news = [item for item in who_news if item.get("level_code", "").lower() == "donsindicators" and selected_country and item.get("value3", "").upper() == selected_country["code"]]
-		if matching_news:
-			latest_news = max(matching_news, key=lambda item: item.get("value4", ""))
-			st.info(f"**{latest_news.get('value1', 'Disease outbreak news')}** — {latest_news.get('value4', 'Date unavailable')}\n\nWHO reports the latest listed Disease Outbreak News item for **{destination_country}**. [Read the WHO report]({latest_news.get('value5', 'https://extranet.who.int/publicemergency/#')})")
-		else:
-			st.info(f"No destination-specific Disease Outbreak News item is currently listed by WHO for {destination_country}.")
-		st.caption("WHO Health Emergency Dashboard data refreshes approximately every 30 minutes and is not a comprehensive list of all health events.")
-	except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
-		st.warning("WHO outbreak information is temporarily unavailable. View the [WHO Health Emergency Dashboard](https://extranet.who.int/publicemergency/#) directly.")
+		st.info("Preparation reminder: this trip is within 14 days. Treat this as an interface trigger, not a medical deadline.")
 
 	st.header("Travel health overview")
 	if not st.session_state.overview_shown:
-		st.info("Choose your trip details and select “Show my travel health overview” to see the demo results.")
+		st.info("Choose your trip details and select “Show my travel health overview” to see the results.")
 	else:
 		route_data = VACCINE_DATA.get(destination_country)
 		if route_data is None:
@@ -338,31 +376,44 @@ with dashboard_column:
 						status_text_color = "#842029" if status == "Required" else "#664d03"
 						st.markdown(f"**{item}**")
 						st.markdown(f'<span style="background-color: {status_color}; color: {status_text_color}; padding: 0.2rem 0.5rem; border-radius: 0.25rem; font-size: 0.85rem;">{status}</span>', unsafe_allow_html=True)
+		render_who_outbreak_information(destination_country, selected_country)
 
 		if any(age <= 18 for age in traveler_ages):
-			st.subheader("Child traveler information")
-			for traveler_number, age in enumerate(traveler_ages, start=1):
-				if age > 18:
-					continue
-				age_months = age * 12
-				matching_vaccines = []
-				for vaccine in CHILDREN_VACCINES:
-					matching_bands = [band for band in vaccine["age_bands"] if band["min_m"] <= age_months <= band["max_m"]]
-					if age_months >= vaccine["min_age_months"] and matching_bands:
-						matching_vaccines.append((vaccine, matching_bands))
-				with st.container(border=True):
-					st.markdown(f"**Traveler {traveler_number}: age {age}**")
-					if not matching_vaccines:
-						st.info("No child vaccine information in the dataset matches this age.")
-					for vaccine, matching_bands in matching_vaccines:
-						st.markdown(f"**{vaccine['name']}**")
-						st.write(vaccine["summary"])
-						for band in matching_bands:
-							st.success(f"Applicable age band: {band['label']} — {band['detail']}")
-						st.caption(f"Travel context: {vaccine['travel_trigger']} Source: {vaccine['source']}")
+			child_vaccine_count = sum(
+				1
+				for vaccine in CHILDREN_VACCINES
+				for age in traveler_ages
+				if age <= 18
+				and age * 12 >= vaccine["min_age_months"]
+				and any(band["min_m"] <= age * 12 <= band["max_m"] for band in vaccine["age_bands"])
+			)
+			st.markdown(
+				f'<div style="background:#e8f3ff; border-left:6px solid #2878c8; padding:0.75rem 1rem; margin:0.75rem 0 0.35rem; border-radius:0.35rem; color:#12304a;"><strong style="font-size:1.1rem;">Child traveler information</strong><br><span>{child_vaccine_count} age-matched vaccine recommendations available</span></div>',
+				unsafe_allow_html=True,
+			)
+			with st.expander("Open child traveler details"):
+				for traveler_number, age in enumerate(traveler_ages, start=1):
+					if age > 18:
+						continue
+					age_months = age * 12
+					matching_vaccines = []
+					for vaccine in CHILDREN_VACCINES:
+						matching_bands = [band for band in vaccine["age_bands"] if band["min_m"] <= age_months <= band["max_m"]]
+						if age_months >= vaccine["min_age_months"] and matching_bands:
+							matching_vaccines.append((vaccine, matching_bands))
+					with st.container(border=True):
+						st.markdown(f"**Traveler {traveler_number}: age {age}**")
+						if not matching_vaccines:
+							st.info("No child vaccine information in the dataset matches this age.")
+						for vaccine, matching_bands in matching_vaccines:
+							st.markdown(f"**{vaccine['name']}**")
+							st.write(vaccine["summary"])
+							for band in matching_bands:
+								st.success(f"Applicable age band: {band['label']} — {band['detail']}")
+							st.caption(f"Travel context: {vaccine['travel_trigger']} Source: {vaccine['source']}")
 
 st.header("Health risk map")
-map_view = st.radio("Map view", ["Yellow fever", "Malaria"], horizontal=True)
+map_view = st.radio("_Map view_", ["Yellow fever", "Malaria"], horizontal=True, label_visibility="collapsed")
 if map_view == "Yellow fever":
 	map_caption = ""
 	map_rows = [{
@@ -400,12 +451,12 @@ map_figure = go.Figure(go.Choropleth(
 origin = next((country for country in COUNTRY_CATALOG if country["name"] == departure_country), None)
 destination = next((country for country in COUNTRY_CATALOG if country["name"] == destination_country), None)
 map_center_longitude = 0
-map_center_latitude = 20
+map_center_latitude = 0
 if origin and destination and origin["code"] in COUNTRY_CENTROIDS and destination["code"] in COUNTRY_CENTROIDS:
 	origin_point = COUNTRY_CENTROIDS[origin["code"]]
 	destination_point = COUNTRY_CENTROIDS[destination["code"]]
 	map_center_longitude = (origin_point["longitude"] + destination_point["longitude"]) / 2
-	map_center_latitude = (origin_point["latitude"] + destination_point["latitude"]) / 2
+	map_center_latitude = 0
 	map_figure.add_trace(go.Scattergeo(
 		lon=[origin_point["longitude"], destination_point["longitude"]],
 		lat=[origin_point["latitude"], destination_point["latitude"]],
@@ -416,30 +467,10 @@ if origin and destination and origin["code"] in COUNTRY_CENTROIDS and destinatio
 		hovertemplate="%{text}<extra></extra>",
 		name="Trip route",
 	))
-map_figure.update_geos(showframe=False, showcoastlines=True, coastlinecolor="#aab4c0", projection_type="natural earth", center={"lon": map_center_longitude, "lat": map_center_latitude})
-map_figure.update_layout(height=480, margin={"r": 0, "t": 0, "l": 0, "b": 0}, paper_bgcolor="rgba(0,0,0,0)")
-st.plotly_chart(map_figure, use_container_width=True, config={"displayModeBar": False})
-
-st.header("Emergency numbers")
-emergency_data = EMERGENCY_NUMBERS.get(destination_country)
-if emergency_data is None:
-	st.info("Emergency numbers are not covered for this destination in the dataset.")
-else:
-	emergency_columns = st.columns(3)
-	for contact_index, contact in enumerate(emergency_data["contacts"]):
-		services = []
-		for service in contact["services"]:
-			service_label = service.title()
-			if service == "other":
-				service_label = f"Other ({contact['dialing_notes']})"
-			services.append(service_label)
-		with emergency_columns[contact_index % 3]:
-			st.metric(", ".join(services), contact["number"])
-	if emergency_data["services_not_documented"]:
-		missing_services = ", ".join(service.title() for service in emergency_data["services_not_documented"])
-		st.caption(f"Services not documented in the dataset: {missing_services}.")
-	st.caption(f"Source: [{emergency_data['source']['name']}]({emergency_data['source']['url']})")
+map_figure.update_geos(showframe=False, showcoastlines=True, coastlinecolor="#aab4c0", projection_type="natural earth", projection_scale=0.85, bgcolor="rgba(0,0,0,0)", center={"lon": map_center_longitude, "lat": map_center_latitude})
+map_figure.update_layout(height=480, margin={"r": 24, "t": 0, "l": 24, "b": 0}, paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", dragmode=False)
+st.plotly_chart(map_figure, use_container_width=True, config={"displayModeBar": False, "scrollZoom": False, "doubleClick": False})
 
 st.header("Sources")
 st.caption("*Please note: VaxTrack is an informational tool, not a substitute for professional medical advice. Always check with your local healthcare provider or travel clinic to confirm what is right for you.*")
-st.markdown("- [WHO travel advice](https://www.who.int/health-topics/travel-and-health)\n- [CDC Travelers' Health](https://wwwnc.cdc.gov/travel)")
+st.markdown("- [WHO travel advice](https://www.who.int/health-topics/travel-and-health)\n- [WHO Health Emergency Dashboard](https://extranet.who.int/publicemergency/)\n- [Our World in Data: malaria incidence](https://ourworldindata.org/grapher/incidence-of-malaria)\n- [CDC Travelers' Health](https://wwwnc.cdc.gov/travel)\n- [REST Countries](https://restcountries.com/)")
