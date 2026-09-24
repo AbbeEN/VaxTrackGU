@@ -219,6 +219,15 @@ icon_markup = f'<img src="data:image/png;base64,{icon_data}" width="112" style="
 st.markdown(
 	"""
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+		*, *::before, *::after {
+			font-family: 'Inter', sans-serif !important;
+		}
+		.material-symbols-rounded,
+		.material-symbols-outlined,
+		[data-testid="stIconMaterial"] {
+			font-family: 'Material Symbols Rounded', 'Material Symbols Outlined' !important;
+		}
 		html, body {
 			overflow-x: hidden !important;
 		}
@@ -352,7 +361,7 @@ with dashboard_column:
 				except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
 					st.caption("Live exchange rate unavailable.")
 	if days_until_departure <= 14:
-		st.info("Preparation reminder: this trip is within 14 days. Treat this as an interface trigger, not a medical deadline.")
+		st.info("Friendly reminder: This trip is within 14 days. Pack your bags - and check off those required & recommended vaccinations.")
 
 	st.header("Travel health overview")
 	if not st.session_state.overview_shown:
@@ -362,13 +371,13 @@ with dashboard_column:
 		if route_data is None:
 			st.info("This destination is not covered by the vaccine dataset. Missing data does not mean there are no requirements or recommendations.")
 		else:
-			for section_name, data_key, empty_text in [("Entry vaccination requirements", "requiredVaccines", "No entry requirements are listed in the dataset."), ("Recommended vaccinations", "recommendedVaccines", "No recommendations are listed in the dataset.")]:
+			for section_name, data_key, empty_text in [("Entry vaccination requirements", "requiredVaccines", "No vaccinations are required for entry"), ("Recommended vaccinations", "recommendedVaccines", "No recommendations are listed in the dataset.")]:
 				st.subheader(section_name)
 				items = route_data[data_key]
 				if data_key == "requiredVaccines" and route_data.get("requiresYellowFeverCertFromEndemicZone") and departure_country in YELLOW_FEVER_RISK_COUNTRIES:
-					st.error(f"Yellow fever certificate condition triggered: {departure_country} is listed as a yellow-fever-risk origin, and {destination_country} requires proof when arriving from a risk country.")
+					st.error(f"{departure_country} is listed as a yellow-fever-risk origin, and {destination_country} requires proof when arriving from a risk country.")
 				if not items:
-					st.info(empty_text)
+					(st.success if data_key == "requiredVaccines" else st.info)(empty_text)
 				for item in items:
 					with st.container(border=True):
 						status = "Required" if data_key == "requiredVaccines" else "Recommended"
@@ -473,4 +482,4 @@ st.plotly_chart(map_figure, use_container_width=True, config={"displayModeBar": 
 
 st.header("Sources")
 st.caption("*Please note: VaxTrack is an informational tool, not a substitute for professional medical advice. Always check with your local healthcare provider or travel clinic to confirm what is right for you.*")
-st.markdown("- [WHO travel advice](https://www.who.int/health-topics/travel-and-health)\n- [WHO Health Emergency Dashboard](https://extranet.who.int/publicemergency/)\n- [Our World in Data: malaria incidence](https://ourworldindata.org/grapher/incidence-of-malaria)\n- [CDC Travelers' Health](https://wwwnc.cdc.gov/travel)\n- [REST Countries](https://restcountries.com/)")
+st.markdown("- [WHO travel advice](https://www.who.int/health-topics/travel-and-health)\n- [WHO Health Emergency Dashboard](https://extranet.who.int/publicemergency/)\n- [Our World in Data: malaria incidence](https://ourworldindata.org/grapher/incidence-of-malaria)\n- [CDC Travelers' Health](https://wwwnc.cdc.gov/travel)\n- [CDC Yellow Book: Travel Vaccine Recommendations for Infants and Children](https://www.cdc.gov/yellow-book/hcp/family-travel/travel-vaccine-recommendations-for-infants-and-children.html)\n- [REST Countries](https://restcountries.com/)")
